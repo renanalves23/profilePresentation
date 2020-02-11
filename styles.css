@@ -1,5 +1,9 @@
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap";
 
+:root {
+  --color-green: #50fa7b;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -39,7 +43,7 @@ header div a:hover {
 #wrapper img {
   /* border-radius: 150px 30px; */
   border-radius: 50%;
-  border: 5px solid #ffffff;
+  border: 5px solid var(--color-green);
   margin-bottom: 32px;
   max-width: 250px;
 }
