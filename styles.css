@@ -76,3 +76,18 @@ header {
   /* text-decoration: underline; */
   border-bottom: 1px solid var(--color-green);
 }
+
+
+/*==== CARDS ====*/
+.cards {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #7159c1; 
+}
+
+.card__img-container img{
+  width: 100%;
+}
