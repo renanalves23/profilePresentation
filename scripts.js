@@ -3,7 +3,8 @@ const cards = document.querySelectorAll('.card')
 
 for(let card of cards) {
     card.addEventListener("click" , function() {
-      modalOverlay.classList.add("active")
+      modalOverlay.classList.add("active");
+      modalOverlay.querySelector("iframe").src = `https://www.youtube.com/embed/${videoId}`
     })
 }
 
@@ -13,3 +14,4 @@ closeModal.addEventListener('click', function() {
     modalOverlay.classList.remove('active')
 
 }) 
+
