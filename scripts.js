@@ -12,4 +12,4 @@ const closeModal = document.querySelector('.close-modal')
 closeModal.addEventListener('click', function() {
     modalOverlay.classList.remove('active')
 
-})
+}) 
