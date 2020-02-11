@@ -71,3 +71,8 @@ header {
 #wrapper p a{
   color: var(--color-green);
 }
+
+#links-footer a {
+  /* text-decoration: underline; */
+  border-bottom: 1px solid var(--color-green);
+}
