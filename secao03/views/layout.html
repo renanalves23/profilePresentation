@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+
+  {% block head %}
+      <title>Renan Alves</title>
+  {% endblock %}
+
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+  <body>
+        <header>  
+            <div class="links">
+              <a href="/">About</a>
+              <span>||</span>
+              <a href="/watch">Watch</a>
+            </div>
+        </header>
+<!-- LUGAR ONDE O ABOUT(MEIO DA PAGINA) VAI ENTRAR -->
+        {% block content %}
+
+        {% endblock %}
+<!-- LUGAR ONDE O ABOUT(MEIO DA PAGINA) VAI ENTRAR -->
+  </body>
+</html>
