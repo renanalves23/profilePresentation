@@ -7,5 +7,5 @@ server.get('/', (req, res) => {
 })
 
 server.listen(5000, () => {
-  console.log('server running')
+  console.log('nodemon server running')
 })
