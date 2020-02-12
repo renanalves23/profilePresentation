@@ -1,9 +1,14 @@
-const express = require('express');
-const nunjucks = require('nunjucks');
+const express = require('express')
+const nunjucks = require('nunjucks')
 
-const server = express();
+const server = express()
 
-server.set("view engine", "html");
+/* for styling */
+server.use(express.static('public'))
+/* for styling */
+
+
+server.set("view engine", "html")
 
 nunjucks.configure("views", {
   express: server
@@ -11,6 +16,10 @@ nunjucks.configure("views", {
 
 server.get('/', (req, res) => {
   return res.render('index')
+})
+
+server.get('/watch', (req, res) => {
+  return res.render('watch')
 })
 
 server.listen(5000, () => {
