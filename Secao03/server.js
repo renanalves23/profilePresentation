@@ -3,14 +3,14 @@ const nunjucks = require('nunjucks');
 
 const server = express();
 
-server.set('view-engine', "html")
+server.set("view engine", "html");
 
-nunjucks.configure('views', {
-  express:server
+nunjucks.configure("views", {
+  express: server
 })
 
 server.get('/', (req, res) => {
-   return res.render('index')
+  return res.render('index')
 })
 
 server.listen(5000, () => {
