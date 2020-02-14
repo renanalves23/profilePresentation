@@ -3,7 +3,8 @@ module.exports = [
     id: "6Czd1Yetaac",
     title: "Formulário Animado com JS puro e CSS Animation",
     duration: "63 min",
-    price: "Free"
+    price: "Free",
+    featured: true
   },
   {
     id: "V3QGW2PgKKY",
@@ -15,7 +16,8 @@ module.exports = [
     id: "lx_m3nfz5bI",
     title: "Formulário Animado com JS puro e CSS Animation",
     duration: "15 min",
-    price: "Free"
+    price: "Free",
+    featured: true
   },
   {
     id: "rAzHvYnQ8DY",
@@ -33,6 +35,7 @@ module.exports = [
     id: "GykTLqODQuU",
     title: "Formulário Animado com JS puro e CSS Animation",
     duration: "58 min",
-    price: "Free"
+    price: "Free",
+    featured: true
   }  
 ]

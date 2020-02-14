@@ -1,22 +1,23 @@
 {% extends "layout.njk" %}
   
       {% block head %}
-               <title>About - Renan Alves</title>
+               <title>About - {{about.name}}</title>
       {% endblock %}
 
 
 {% block content %}
 
 <div id="wrapper">
-  <img src="https://avatars2.githubusercontent.com/u/53740747?s=460&v=4" alt="Renan Alves">
-  <h1>Renan Alves</h1>
-  <h2>FIAP</h2>
-  <p>FullStack Developer at <a href="https://www.linkedin.com/in/renan-mendes-b3482a63/" target="_blank"> . . . Hire Me. . .</a></p>
+  <img src="{{ about.avatar_url }}" alt="Imagem de {{ about.name }}">
+  <h1>{{about.name}}</h1>
+  <h2>{{about.college}}</h2>
+  <p>{{about.role}}</p>
 </div>
 
 <div id="links-footer" class="links">
-  <a href="https://github.com/renanalves23" target="_blank">Github</a>
-  <a href="https://www.linkedin.com/in/renan-mendes-b3482a63/" target="_blank">Linkedin</a>
+  {% for link in about.links %}
+  <a href="{{ link.url }}" target="_blank">{{link.name}}</a>
+  {% endfor %}
 </div>
 
 {% endblock %}
