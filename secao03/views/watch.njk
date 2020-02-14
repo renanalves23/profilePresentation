@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "layout.njk" %}
 
   {% block head %}
       <title>Watch - Renan Alves</title>
@@ -15,22 +15,22 @@
 
           <section class="cards">
 
-               {% for item in items %}}
-                <div class="card" id="6Czd1Yetaac">
+               {% for item in items %}
+                <div class="card" id="{{item.id}}">
                   <div class="card__img-container">
-                    <img src="https://img.youtube.com/vi/6Czd1Yetaac/maxresdefault.jpg" alt="Video Aula">
+                    <img src="https://img.youtube.com/vi/{{item.id}}/maxresdefault.jpg" alt="Imagem de {{item.title}}">
                   </div>
                   <div class="card__content">
-                    <p>Formulário Animado com JS puro e CSS Animation</p>
+                    <p>{{item.title}}</p>
                   </div>
                   <div class="card__info">
-                    <p>63 min</p>
-                    <p class="card__price">FREE</p>
-                  </div>
+                    <p>{{item.duration}}</p>
+                    <p class="card__price">{{item.price}}</p>
+                   </div>
                 </div>
                 {% endfor %}
 
-        </div>
+        
 
       </section>
 
