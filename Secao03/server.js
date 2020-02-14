@@ -20,7 +20,7 @@ server.get('/', (req, res) => {
 })
 
 server.get('/watch', (req, res) => {
-  return res.render('watch')
+  return res.render('watch', { items: videos } )
 })
 
 server.listen(5000, () => {
