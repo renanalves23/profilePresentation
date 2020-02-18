@@ -37,6 +37,24 @@ server.get('/watch', (req, res) => {
   return res.render('watch', { items: videos } )
 })
 
+server.get('/video', (req, res) => {
+  const id = req.query.id;
+
+  const video = videos.find((video) => {
+      if (video.id == id) {
+        return true
+      }
+  })
+
+  if (!video){
+    return res.send("Video not found")
+  }
+
+ return res.render("video", { item: video })
+})
+
+
+
 server.listen(5000, () => {
   console.log('nodemon server running')
 })
