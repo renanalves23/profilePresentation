@@ -22,7 +22,7 @@ server.get('/', (req, res) => {
     avatar_url: "https://avatars2.githubusercontent.com/u/53740747?s=460&v=4",
     name: "Renan Alves",
     college: "FIAP",
-    role: 'FullStack Developer at<a href="https://www.linkedin.com/in/renan-mendes-b3482a63/" target="_blank"> . . . Hire Me. . .</a>',
+    role: 'FullStack Developer at<a style="background-color: rgb(0,0,0,0.2) " href="https://www.linkedin.com/in/renan-mendes-b3482a63/" target="_blank"> . . . Hire Me. . .</a>',
     //role: 'FullStack Developer at',
     links: [
       { name: "Github", url: "https://github.com/renanalves23"},
@@ -41,9 +41,7 @@ server.get('/video', (req, res) => {
   const id = req.query.id;
 
   const video = videos.find((video) => {
-      if (video.id == id) {
-        return true
-      }
+      return video.id == id
   })
 
   if (!video){
